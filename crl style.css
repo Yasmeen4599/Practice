@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+header {
+  background-color: #136c72;
+  padding: 1em 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navlist1 {
+  margin: 0 auto;
+}
+
+.navitem + .navitem {
+  margin-left: 1em;
+}
+
+.navlink {
+  color: white;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  opacity: 0.75;
+}
+
+.navbutton {
+  background-color: white;
+  color: #136c72;
+  border-radius: 10em;
+  padding: 0.25em 1em;
+}
+
+.topnavi{
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.intro {
+  background-color: #23424a;
+  padding: 100px 0;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 62%;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 3em;
+}
+
+.hero-img {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 2em;
+  background-color: #38cfd9;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  border-radius: 50px;
+  font-weight: bolder;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.7;
+}
+
+.sec1 h2 {
+  color: #136c72;
+}
+
+.sec1 p {
+  color: #23424a;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 2.6em 0;
+}
+
+.asidebar {
+  background-color: #136c72;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  width: 32%;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .row1{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .logo{
+    margin-top: 0.5em;
+  }
+
+  .navbar{
+    text-align: center;
+  }
+
+  .navlist1{
+    margin-top: 50px;
+  }
+
+  .navitem + .navitem {
+    margin-right: 1em;
+  }
+
+  .row, .navlist, .topnavi{
+    display: block;
+  }
+
+  .intro{
+    padding: 10px 0;
+  }
+
+  .hero,.hero-img{
+    width: 100%;
+  }
+
+  .hero-img{
+    margin-top: 2em;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav a.icon:hover{
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+
+  .topnav a {
+    display: none;
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+
+  .topnav .icon {
+    display: none;
+    color: white;
+  }
+
+}
+
