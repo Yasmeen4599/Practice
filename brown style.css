@@ -29,6 +29,7 @@ p {
   max-width: 1128px;
   margin: 0 auto;
   width: 50%;
+  height: 100vh;
 }
 
 .cols {
